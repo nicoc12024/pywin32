@@ -24,7 +24,12 @@ SECRET_KEY = 'django-insecure-!w1mm0)22&2j*1u!$$jg^u=ak%n6090wt!0s(fu-)&f(w8#stw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS=['*']
+ALLOWED_HOSTS = ["*"]
+CORS_ALLOWED_ORIGINS = [
+    "https://musical-maamoul-dba19e.netlify.app/",
+]
+
+
 
 # Application definition
 
@@ -61,6 +66,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
     "http://127.0.0.1:3000",
+    "https://musical-maamoul-dba19e.netlify.app/",
+    
 ]
 
 TEMPLATES = [
